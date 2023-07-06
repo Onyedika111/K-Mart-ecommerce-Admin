@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "@uploadthing/react/styles.css";
 import { ReactSortable } from "react-sortablejs";
-
 import { UploadButton } from "@uploadthing/react";
 
 import { ourFileRouter } from "@/app/api/uploadthing/core";
@@ -112,7 +111,7 @@ const ProductForm = ({
             <div>
             <select value={productProperties[p.name]} onChange={(e) => setProductProp(p.name, e.target.value)}>
               {p.values.map((v) => (
-                <option value={v}>{v}</option>
+                <option key={v} value={v}>{v}</option>
               ))}
             </select>
            </div>

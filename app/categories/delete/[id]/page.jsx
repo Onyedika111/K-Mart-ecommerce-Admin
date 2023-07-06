@@ -20,7 +20,7 @@ const DeleteCategoryPage = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
   function goBack() {
     router.push("/categories");

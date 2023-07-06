@@ -20,7 +20,7 @@ const EditProductPage = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
   return (
     <div>
       <Layout>
