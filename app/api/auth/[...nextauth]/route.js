@@ -1,7 +1,7 @@
 import clientPromise from '@/lib/mongodb'
 import { MongoDBAdapter } from '@auth/mongodb-adapter'
 
-import NextAuth from 'next-auth'
+import NextAuth from "next-auth/react"
 import GoogleProvider from 'next-auth/providers/google'
 
 const adminEmails = ['onyxunusual@gmail.com']
